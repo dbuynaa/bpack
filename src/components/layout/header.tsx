@@ -7,7 +7,7 @@ const Header = () => {
     <nav className="sticky top-0 z-50 border-blue-100 border-b bg-white/95 shadow-sm backdrop-blur-md">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3">
             <div className="relative">
               <Image
                 src="/public/web-app-manifest-512x512.png"
@@ -25,16 +25,16 @@ const Header = () => {
                 Хүргэлтийн үйлчилгээ
               </p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center space-x-6 lg:flex xl:space-x-8">
-            <Link
+            {/* <Link
               href="#services"
               className="font-medium text-gray-700 transition-colors hover:text-blue-600"
             >
               Үйлчилгээ
-            </Link>
+            </Link> */}
             {/* <Link
               href="#how-it-works"
               className="font-medium text-gray-700 transition-colors hover:text-blue-600"
